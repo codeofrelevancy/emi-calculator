@@ -1,0 +1,8 @@
+const MONTHS_IN_YEAR = 12;
+
+const CURRENCY = "INR";
+const CURRENCY_SYMBOL = "₹";
+
+const PIE_CHART_COLORS = ["#4f46e5", "#db2777"];
+
+export { MONTHS_IN_YEAR, CURRENCY, CURRENCY_SYMBOL, PIE_CHART_COLORS };
