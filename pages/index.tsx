@@ -41,14 +41,17 @@ export default function Home() {
     setState({
       ...state,
       outcome: calculateEmiOutcome(
-        loanAmount,
-        interestRate,
-        loanTenure,
+        Number(loanAmount),
+        Number(interestRate),
+        Number(loanTenure),
         prepayments
       ),
       errors: {},
     });
   };
+
+  console.log(state);
+  
 
   const resetStatus =
     loanAmount !== 0 || interestRate !== 0 || loanTenure !== 0;
