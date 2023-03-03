@@ -46,6 +46,7 @@ export default function Home() {
         loanTenure,
         prepayments
       ),
+      errors: {},
     });
   };
 
