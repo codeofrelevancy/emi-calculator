@@ -31,7 +31,7 @@ function TextField({
           placeholder={placeholder}
           onChange={onChange}
           onBlur={onBlur}
-          className={classNames('block w-44 md:w-full rounded-md border-0 py-2 px-3 pr-10 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6', {
+          className={classNames('block w-full min-w-[12rem] rounded-md border-0 py-2 px-3 pr-10 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6', {
             'ring-pink-700': error,
             'ring-gray-300': !error,
           })}

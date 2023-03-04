@@ -50,9 +50,6 @@ export default function Home() {
     });
   };
 
-  console.log(state);
-  
-
   const resetStatus =
     loanAmount !== 0 || interestRate !== 0 || loanTenure !== 0;
 
@@ -113,27 +110,23 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="grid grid-cols-6 gap-6 mt-10">
-                  <div className="col-span-6 sm:col-span-3">
-                    <button
-                      type="button"
-                      onClick={onCalculate}
-                      className="btn btn-primary"
-                    >
-                      Calculate
-                    </button>
-                  </div>
+                <div className="grid grid-cols-1 gap-4 mt-10 lg:grid-cols-2">
+                  <button
+                    type="button"
+                    onClick={onCalculate}
+                    className="btn btn-primary"
+                  >
+                    Calculate
+                  </button>
 
-                  <div className="col-span-6 sm:col-span-3">
-                    <button
-                      type="button"
-                      onClick={resetState}
-                      className="btn btn-secondary"
-                      disabled={!resetStatus}
-                    >
-                      Reset
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    onClick={resetState}
+                    className="btn btn-secondary"
+                    disabled={!resetStatus}
+                  >
+                    Reset
+                  </button>
                 </div>
               </form>
             </div>
